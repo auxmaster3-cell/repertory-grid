@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #F8F6FA;
+  color: #2E2C34;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.coach-card {
+  @apply bg-white rounded-3xl shadow-card p-6 transition-all duration-300 hover:shadow-card-hover;
+}
+
+.coach-input {
+  @apply w-full rounded-2xl border border-purple-100 bg-white px-4 py-3 text-sm text-ink placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all;
+}
+
+.coach-btn-primary {
+  @apply bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-medium px-6 py-3 rounded-2xl shadow-soft transition-all disabled:opacity-40 disabled:cursor-not-allowed;
+}
+
+.coach-btn-secondary {
+  @apply bg-primary-50 hover:bg-primary-100 text-primary-700 font-medium px-6 py-3 rounded-2xl transition-all border border-primary-200;
+}
+
+.coach-chip {
+  @apply inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-medium;
+}
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1c3ff; border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: #b9a4ff; }
